@@ -1,0 +1,22 @@
+body{
+    background-image: url(./img_fondo.png);
+    background-size: cover;
+}
+.container {
+    text-align: center;
+    background-color: rgba(85, 85, 85, 0.426);
+    width: 70vb; 
+    height: auto; 
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.temperatura,.descripcion,.hubi{
+    font-size: 5vb;
+}
+.imagen{
+    width: 15vb;
+} 
