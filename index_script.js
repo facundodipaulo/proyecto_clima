@@ -2,7 +2,7 @@ let longitud;
 let latitud;
 let temperatura = document.querySelector(".temperatura");
 let descripcion = document.querySelector(".descripcion");
-let hubicacion = document.querySelector(".hubi");
+let ubicacion = document.querySelector(".ubi");
 let imagen = document.querySelector(".imagen");
 const kelvin = 273.15;
 
@@ -23,7 +23,7 @@ window.addEventListener("load", function () {
                     console.log(data);
                     temperatura.textContent = Math.floor(data.main.temp - kelvin) + "°C";
                     descripcion.textContent = data.weather[0].description; 
-                    hubicacion.textContent = data.name + "," + data.sys.country;
+                    ubicacion.textContent = data.name + "," + data.sys.country;
 
 
                     const iconCode = data.weather[0].icon;
